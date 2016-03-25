@@ -3,11 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>任务一</title>
-    <style type="text/css">
-        .td{
-            colspan:"2";
-        }
-    </style>
 </head>
 <body>
 <span>任务一</span>
@@ -52,15 +47,46 @@
     <li>排名2</li>
     <li>排名3</li>
 </ol>
-<table border="1px soild">
+<article>
+    <table border="1px soild">
     <caption align="top">我是表格标题</caption>
     <tr><td>表头</td><td>表头</td><td>表头</td></tr>
     <tr><td>表内容单元格</td><td>表内容单元格</td><td>操作</td></tr>
     <tr><td>表内容单元格</td><td>表内容单元格</td><td>操作</td></tr>
     <tr><td>表内容单元格</td><td>表内容单元格</td><td>操作</td></tr>
     <tr><td>表内容单元格</td><td>表内容单元格</td><td>操作</td></tr>
-    <tr><td>总计</td><td class="td">1000</td></tr>
-</table>
-
+    <tr><td>总计</td><td colspan="2">1000</td></tr>
+    </table>
+</article>
+  <aside>
+    <h2>这里以后是一个侧栏</h2>
+    <h2>这是侧栏的标题</h2>
+  </aside>
+    <form>
+    <p>请输入邮箱地址：<input type="email" placeholder="这是一个文本输入框"></p>
+    <p>邮箱地址请按要求格式输入</p>
+    <div><p style="display: inline">请输入密码：<input type="password" placeholder="这是一个文本输入框" pattern="[A-Za-z]{6,16}"></p>
+        <p style="display: inline">请重复输入密码：<input type="password" placeholder="这是一个文本输入框" pattern="[A-Za-z]{6,16}"></p></div>
+    <p>密码请为6-16位英文数字</p>
+    <div>
+        性别:&nbsp;
+        <input type="radio" name="sex" value="male" checked="checked" id="male"><label for="male">男</label>
+        <input type="radio" name="sex" value="female" id="female"><label for="female">女</label>
+        城市:
+        <select name="cities">
+            <option value="beijing" >北京</option>
+            <option value="shanghai" >上海</option>
+            <option value="guangzhou" selected>广州</option>
+            <option value="shenzhen">深圳</option>
+        </select>&nbsp;
+        爱好：&nbsp;
+        <input type="checkbox" name="habit" id="sport"><label for="sport">运动</label>
+        <input type="checkbox" name="habit" id="art"><label for="art">艺术</label>
+        <input type="checkbox" name="habit" id="science"><label for="science">科学</label>
+        个人描述：<textarea>这是一个多行输入框，输入你的描述</textarea>
+        <input type="submit" value="确认提交">
+    </div>
+    </form>
+版权所有&copy;
 </body>
 </html>
